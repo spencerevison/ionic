@@ -73,6 +73,7 @@ import {ShowWhen, HideWhen} from '../components/show-hide-when/show-hide-when';
  * - List
  * - ListHeader
  * - Item
+ * - ItemContent
  * - ItemSliding
  * - VirtualScroll
  * - VirtualItem

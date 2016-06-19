@@ -67,7 +67,7 @@ export class NativeInput {
   @HostListener('blur')
   private _blur() {
     this.focusChange.emit(false);
-    this.hideFocus(true);
+    this.hideFocus(false);
 
     this._unrefBlur && this._unrefBlur();
     this._unrefBlur = null;
