@@ -1,7 +1,7 @@
-import {Directive, ElementRef, Renderer, Attribute, NgZone} from '@angular/core';
+import { Directive, ElementRef, NgZone, Renderer } from '@angular/core';
 
-import {Ion} from '../ion';
-import {ItemSlidingGesture} from '../item/item-sliding-gesture';
+import { Ion } from '../ion';
+import { ItemSlidingGesture } from '../item/item-sliding-gesture';
 
 /**
  * The List is a widely used interface element in almost any mobile app,
@@ -115,19 +115,15 @@ export class List extends Ion {
  * @private
  */
 @Directive({
-  selector: 'ion-list-header'
+  selector: 'ion-list-header',
+  host: {
+    'class': 'list-header'
+  }
 })
 export class ListHeader {
 
-  constructor(private _renderer: Renderer, private _elementRef: ElementRef, @Attribute('id') private _id: string) { }
+  constructor(renderer: Renderer, elementRef: ElementRef) {
 
-  public get id(): string {
-    return this._id;
-  }
-
-  public set id(val: string) {
-    this._id = val;
-    this._renderer.setElementAttribute(this._elementRef.nativeElement, 'id', val);
   }
 
 }

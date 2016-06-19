@@ -88,7 +88,7 @@ $item-ios-sliding-content-background:     $list-ios-background-color !default;
   transition-duration: 0ms;
 }
 
-.item-inner {
+.item .item-inner {
   padding-right: ($item-ios-padding-right / 2);
 
   border-bottom: 1px solid $list-ios-border-color;
@@ -195,7 +195,7 @@ ion-note {
 
 ion-item-group {
   .item:first-child {
-    .item-inner {
+    .item .item-inner {
       border-top-width: 0;
     }
   }

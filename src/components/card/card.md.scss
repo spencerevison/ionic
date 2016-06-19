@@ -55,7 +55,7 @@ ion-card {
       padding: 0;
     }
 
-    .item-inner {
+    .item .item-inner {
       border-bottom: 1px solid $list-md-border-color;
     }
   }
@@ -65,7 +65,7 @@ ion-card {
     border-bottom: 0;
   }
 
-  .item-inner {
+  .item .item-inner {
     border: 0;
   }
 
