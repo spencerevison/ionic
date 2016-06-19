@@ -3044,9 +3044,9 @@ IonicModule
 
           ionic.Platform.ready(function() {
 
-            window.addEventListener('statusTap', function() {
+            /*window.addEventListener('statusTap', function() {
               $ionicScrollDelegate.scrollTop(true);
-            });
+            });*/
 
             q.resolve();
             cb && cb();
